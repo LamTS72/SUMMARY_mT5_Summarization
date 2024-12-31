@@ -1,3 +1,5 @@
 *.safetensors
 *.ini
 *.ipynb
+*.parquet
+*.duckdb
