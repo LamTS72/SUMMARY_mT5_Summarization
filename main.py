@@ -5,7 +5,7 @@ from transformers import pipeline
 st.title('Langchain Demo With Summarization Of Text')
 input_text=st.text_input("Input text")
 
-model_path = "huggingface-course/mt5-small-finetuned-amazon-en-es"
+model_path = "Chessmen/mt5-small-finetuned-amazon-en-es"
 summary_task  = pipeline(
     "summarization",
     model=model_path,
