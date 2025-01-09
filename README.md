@@ -11,17 +11,40 @@ Dataset: `*amazon_reviews_multi*`
 
 Language: `*pytorch*`
 
-## Notes:
+# Project Structure
 
-`data_train.py`: represent the dataset
+This project follows the following folder structure:
 
-`preprocessing.py`: tokenizer dataset, align inputs and labels after tokenized that occur changed length of sentences.
+```
+summary_root/
+├── config/
+│   └── summary_config.py
+├── data/
+│   └── custom_data.py
+├── models/
+│   ├── preprocessing.py
+│   ├── predictor.py
+│   ├── summary_model.py
+│   └── train.py
+└── main.py
+```
 
-`train.py`: train model
+## Folder Descriptions
 
-`predictor.py`: inference model
+### config/
+- **summary_config.py**: Contains configuration settings for the project, such as hyperparameters and file paths.
 
-`config.py`: hyperparameter config
+### data/
+- **custom_data.py**: Handles data loading, preprocessing, and dataset management.
+
+### models/
+- **preprocessing.py**: Contains functions for data preprocessing.
+- **predictor.py**: Implements the `Predictor` class for making predictions.
+- **summary_model.py**: Defines the model architecture and utilities.
+- **train.py**: Contains the training loop and functions to train the model.
+
+### main.py
+- The main script to run the project, including loading data, training the model, and making predictions.
 
 ## How to use
 
